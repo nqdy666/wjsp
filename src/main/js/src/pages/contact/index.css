@@ -1,0 +1,21 @@
+.contact-main {
+  margin-top: 100px;
+  margin-bottom: 10px;
+
+  .placeholder {
+    h4 {
+      text-align: center;
+    }
+    .text-muted {
+      display: block;
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .contact-main {
+    margin-top: 10px;
+  }
+}
+

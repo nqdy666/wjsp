@@ -12,10 +12,10 @@
     </div>
     <div id="navbar" class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
-        <li><a href="${ctx}/">首页</a>
-        </li>
-        <li><a href="${ctx}/start">起步</a>
-        </li>
+        <li><a href="${ctx}/">首页</a></li>
+        <li><a href="${ctx}/start">起步</a></li>
+        <li><a href="${ctx}/contact">联系</a></li>
+        <li><a href="https://github.com/nqdy666/wjsp" target="_blank">GITHUB</a></li>
       </ul>
     </div>
   </div>

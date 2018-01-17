@@ -20,6 +20,11 @@ public class MainController {
 		return "start/index";
 	}
 
+	@RequestMapping(value="/contact", method=RequestMethod.GET)
+	public String contact() throws Exception {
+		return "contact/index";
+	}
+
 	@RequestMapping(value="/404", method=RequestMethod.GET)
 	public String notFound() throws Exception {
 		return "index/index";
