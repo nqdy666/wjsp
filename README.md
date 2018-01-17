@@ -6,10 +6,10 @@
 传统的JSP页面应用无法有效的使用ES6语法特性，项目打包压缩困难，无法热更新。传统的单页应用在Tomcat等容器下无法进行服务端渲染到达SEO的效果。本项目工程很好融合的传统JSP页面服务端渲染的特点和单页应用开发特性且极易上手使用!
 
 ### 源码地址
-[源码地址](http://git.sdp.nd/264312/wjsp)
+[源码地址](https://github.com/nqdy666/wjsp)
 
 ### Demos与文档
-[Demos与文档](http://nd-101-ppt.pre1.web.nd/)
+[Demos与文档](http://wjsp.qjzd.net/)
 
 <!-- more -->
 
