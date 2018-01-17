@@ -33,13 +33,14 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 })
 public class MvcConfig extends WebMvcConfigurerAdapter {
     /**
+     * 经过测试，加入后开发过程中启动tomcat偶尔会失败，原因待排查
      * 拦截器注入
      * https://stackoverflow.com/questions/23349180/java-config-for-spring-interceptor-where-interceptor-is-using-autowired-spring-b
      */
-    @Bean
-    GlobalInterceptor globalInterceptor () {
-        return new GlobalInterceptor();
-    }
+//    @Bean
+//    GlobalInterceptor globalInterceptor () {
+//        return new GlobalInterceptor();
+//    }
 
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
@@ -48,8 +49,8 @@ public class MvcConfig extends WebMvcConfigurerAdapter {
 
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
-        registry.addInterceptor(globalInterceptor())
-                .addPathPatterns("/**");
+//        registry.addInterceptor(globalInterceptor())
+//                .addPathPatterns("/**");
         super.addInterceptors(registry);
     }
 }
