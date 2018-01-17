@@ -5,7 +5,7 @@
 <head>
   <title>WEBPACK-JSP</title>
   <jsp:include page="../include/meta.jsp"></jsp:include>
-<link href="/static/css/start.b8461899480bd085bb2e0be4aa16de99.css?1c713dc662f4a76f2dd6" rel="stylesheet"></head>
+<link href="/static/css/start.b8461899480bd085bb2e0be4aa16de99.css?f08fbfaa8a5d8df04579" rel="stylesheet"></head>
 
 <jsp:include page="../include/lowie.jsp"></jsp:include>
 <body>
@@ -39,7 +39,7 @@
   <div class="main">
     <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 section" id="overview">
       <h1 class="page-header">介绍</h1>
-      <p>传统的JSP页面应用无法有效的使用ES6语法特性，项目打包压缩困难，无法热更新。传统的单页应用在Tomcat等容器下无法进行服务端渲染到达SEO的效果。本项目工程很好融合的传统JSP页面服务端渲染的特点和单页应用开发特性且极易上手使用!</p>
+      <p>传统的JSP页面应用无法有效的使用ES6语法特性，项目打包压缩困难，无法热更新。传统的单页应用在Tomcat等容器下无法进行服务端渲染从而达到SEO的效果。本项目工程很好融合的传统JSP页面服务端渲染的特点和单页应用开发特性且极易上手使用!</p>
       <p>特性</p>
       <ul>
         <li>多页应用</li>
@@ -158,7 +158,11 @@
       <h1 class="page-header">打包发布</h1>
       <p><code>npm run build</code></p>
       <p>webapp作为输出目录，static中文件会拷贝到输出目录，pages目录下的jsp文件会作为模板文件拷贝到webapp/WEB-INF/jsp目录下，与jsp关联的js入口会被合并压缩后引入到jsp文件的body中。jsp关联的css会被抽离出一个单个的css文件引入的jsp文件head中。</p>
-      <p>如果您打包后的应用的Application Context不是<code>/</code>, 比如是<code>/app</code>，即访问地址都是基于<code>http://localhost:8080/app</code>，那么打包的时候webpack的<code>publicPath</code>参数记得配置/app，且jsp页面中所有的地址都需要带上<code>${pageContext.request.contextPath}/</code>，在该项目框架中可以简写为<code>${ctx}/</code></p>
+      <p>以下几点需要注意一下</p>
+      <ul>
+        <li>如果您打包后的应用的Application Context不是<code>/</code>, 比如是<code>/app</code>，即访问地址都是基于<code>http://localhost:8080/app</code>，那么打包的时候webpack的<code>publicPath</code>参数记得配置/app，且jsp页面中所有的地址都需要带上<code>${'$'}{pageContext.request.contextPath}/</code>，在该项目框架中可以简写为<code>${'$'}{ctx}/</code></li>
+        <li>如果您在打包后发现某些文件无法访问，请检查一下是否在tomcat环境下是否限制了某些文件类型的访问，比如检查一下web.xml中的相关配置。</li>
+      </ul>
     </div>
     <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 section" id="jsp-page">
       <h1 class="page-header">JSP页面</h1>
@@ -226,12 +230,14 @@
       <ul>
         <li>虽然通过WriteFilePlugin的jsp文件输出到磁盘上了，但是因为不是通过idea直接修改，idea还是无法立刻同步这些文件。idea同步并发布jsp文件会有10s的延迟。如果等不及10秒或者页面一直不刷新，可以先点击idea菜单<code>File->Syncronize</code>>同步文件（快捷键Ctrl+Alt+Y），然后在点击Run的左侧第三个按钮后选择<code>Update classes and resources</code>手动更新，之后就刷新页面就可以看到最新出的页面。</li>
       </ul>
+      <h3>结语</h3>
+      <p>这个思路其实不仅适用tomcat下的jsp多页应用，同样也是适用node作为服务器的多页应用。Enjoy it!</p>
     </div>
   </div>
 </div>
 <!--/滚屏-->
 <jsp:include page="../include/footer.jsp"></jsp:include>
 <jsp:include page="../include/common_script.jsp"></jsp:include>
-<script type="text/javascript" src="/static/js/manifest.js?1c713dc662f4a76f2dd6"></script><script type="text/javascript" src="/static/js/vendor.js?1c713dc662f4a76f2dd6"></script><script type="text/javascript" src="/static/js/start.js?1c713dc662f4a76f2dd6"></script><script type="text/javascript" src="/static/js/polyfill.js?1c713dc662f4a76f2dd6"></script></body>
+<script type="text/javascript" src="/static/js/manifest.js?f08fbfaa8a5d8df04579"></script><script type="text/javascript" src="/static/js/vendor.js?f08fbfaa8a5d8df04579"></script><script type="text/javascript" src="/static/js/start.js?f08fbfaa8a5d8df04579"></script><script type="text/javascript" src="/static/js/polyfill.js?f08fbfaa8a5d8df04579"></script></body>
 
 </html>
