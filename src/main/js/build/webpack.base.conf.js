@@ -27,6 +27,7 @@ const htmlWebpackPlugins = utils.getJspMapPath().map(function (mapEntry) {
   if (indexJsp) {
     conf.inject = 'body'
     conf.chunks = ['polyfill', 'vendor', 'manifest', indexJsp.name]
+    conf.chunksSortMode = 'manual'
     conf.hash = true
   }
   return new HtmlWebpackPlugin(conf)
