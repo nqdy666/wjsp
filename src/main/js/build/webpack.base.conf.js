@@ -119,7 +119,8 @@ module.exports = {
     ...htmlWebpackPlugins,
     // copy custom static assets
     new WriteFilePlugin({
-      test: /^((?!\.hot-update).)*$/,
+      // test: /^((?!\.hot-update).)*$/,
+      test: /\.jsp|\.tld|\.xml$/,
     })
   ]
 }
