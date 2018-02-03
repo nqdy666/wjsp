@@ -26,17 +26,14 @@ const htmlWebpackPlugins = utils.getJspMapPath().map(function (mapEntry) {
   })[0]
   if (indexJsp) {
     conf.inject = 'body'
-    conf.chunks = ['polyfill', 'vendor', 'manifest', indexJsp.name]
-    conf.chunksSortMode = 'manual'
+    conf.chunks = ['manifest', 'vendor', indexJsp.name]
     conf.hash = true
   }
   return new HtmlWebpackPlugin(conf)
 })
 module.exports = {
   context: pathResolve.root(),
-  entry: Object.assign({
-    polyfill: [pathResolve.src('polyfills/index.js')]
-  }, entries),
+  entry: entries,
   output: {
     path: config.build.assetsRoot,
     filename: utils.assetsPath('js/[name].js'),

@@ -1,4 +1,4 @@
-import '@/styles/index.css'
+import '@/shares/page'
 import './dashboard.css'
 import $ from 'jquery'
 import Vue from 'vue'

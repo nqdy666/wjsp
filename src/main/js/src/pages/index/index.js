@@ -1,3 +1,3 @@
-import '@/styles/index.css'
+import '@/shares/page'
 
 console.log('hello world')

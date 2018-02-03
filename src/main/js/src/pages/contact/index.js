@@ -1,2 +1,2 @@
-import '@/styles/index.css'
+import '@/shares/page'
 import './index.css'
