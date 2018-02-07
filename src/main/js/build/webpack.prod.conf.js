@@ -56,6 +56,7 @@ const webpackConfig = merge(baseWebpackConfig, {
     // split vendor js into its own file
     new webpack.optimize.CommonsChunkPlugin({
       name: 'vendor',
+      filename: utils.assetsPath('js/[name].[chunkhash].js'),
       minChunks: function (module) {
         // any required modules inside node_modules are extracted to vendor
         return (
@@ -71,6 +72,7 @@ const webpackConfig = merge(baseWebpackConfig, {
     // prevent vendor hash from being updated whenever app bundle is updated
     new webpack.optimize.CommonsChunkPlugin({
       name: 'manifest',
+      filename: utils.assetsPath('js/[name].[chunkhash].js'),
       minChunks: Infinity
     }),
     // This instance extracts shared chunks from code splitted chunks and bundles them
@@ -78,7 +80,7 @@ const webpackConfig = merge(baseWebpackConfig, {
     // see: https://webpack.js.org/plugins/commons-chunk-plugin/#extra-async-commons-chunk
     // new webpack.optimize.CommonsChunkPlugin({
     //    name: 'common-app',
-    //    async: 'vendor-async',
+    //    async: utils.assetsPath('js/vendor-async.[chunkhash].js'),
     //    children: true,
     //    minChunks: 3
     //  })

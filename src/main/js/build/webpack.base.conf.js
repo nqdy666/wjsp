@@ -36,8 +36,12 @@ module.exports = {
   entry: entries,
   output: {
     path: config.build.assetsRoot,
-    filename: utils.assetsPath('js/[name].js'),
-    chunkFilename: utils.assetsPath('js/[id].chunk.js?[chunkhash]'),
+    filename: process.env.NODE_ENV === 'production'
+      ? utils.assetsPath('js/[name].[chunkhash].js')
+      : utils.assetsPath('js/[name].[hash].js'),
+    chunkFilename: process.env.NODE_ENV === 'production'
+      ? utils.assetsPath('js/[id].chunk.[chunkhash].js?')
+      : utils.assetsPath('js/[id].chunk.[hash].js?'),
     publicPath: process.env.NODE_ENV === 'production'
       ? config.build.assetsPublicPath
       : config.dev.assetsPublicPath,
