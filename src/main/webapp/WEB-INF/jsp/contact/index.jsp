@@ -5,7 +5,7 @@
 <head>
   <title>WEBPACK-JSP</title>
   <jsp:include page="../include/meta.jsp"></jsp:include>
-<link href="/static/css/contact.b75a81cb6c21185eb4839cb6e9c4c146.css?69dc70d6fe2ca9a837cf" rel="stylesheet"></head>
+<link href="/static/css/contact.b75a81cb6c21185eb4839cb6e9c4c146.css" rel="stylesheet"></head>
 
 <jsp:include page="../include/lowie.jsp"></jsp:include>
 <body>
@@ -33,6 +33,6 @@
 </div>
 <jsp:include page="../include/footer.jsp"></jsp:include>
 <jsp:include page="../include/common_script.jsp"></jsp:include>
-<script type="text/javascript" src="/static/js/manifest.e1cd96d399653e0cb183.js?69dc70d6fe2ca9a837cf"></script><script type="text/javascript" src="/static/js/vendor.21901c8e20b7cffc1319.js?69dc70d6fe2ca9a837cf"></script><script type="text/javascript" src="/static/js/contact.2a90203935f2dcb1af90.js?69dc70d6fe2ca9a837cf"></script></body>
+<script type="text/javascript" src="/static/js/manifest.e1cd96d399653e0cb183.js"></script><script type="text/javascript" src="/static/js/vendor.21901c8e20b7cffc1319.js"></script><script type="text/javascript" src="/static/js/contact.2a90203935f2dcb1af90.js"></script></body>
 
 </html>

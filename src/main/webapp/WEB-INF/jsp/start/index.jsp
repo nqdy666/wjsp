@@ -5,7 +5,7 @@
 <head>
   <title>WEBPACK-JSP</title>
   <jsp:include page="../include/meta.jsp"></jsp:include>
-<link href="/static/css/start.b8461899480bd085bb2e0be4aa16de99.css?69dc70d6fe2ca9a837cf" rel="stylesheet"></head>
+<link href="/static/css/start.b8461899480bd085bb2e0be4aa16de99.css" rel="stylesheet"></head>
 
 <jsp:include page="../include/lowie.jsp"></jsp:include>
 <body>
@@ -238,6 +238,6 @@
 <!--/滚屏-->
 <jsp:include page="../include/footer.jsp"></jsp:include>
 <jsp:include page="../include/common_script.jsp"></jsp:include>
-<script type="text/javascript" src="/static/js/manifest.e1cd96d399653e0cb183.js?69dc70d6fe2ca9a837cf"></script><script type="text/javascript" src="/static/js/vendor.21901c8e20b7cffc1319.js?69dc70d6fe2ca9a837cf"></script><script type="text/javascript" src="/static/js/start.312ed0f8927ecf9ae0df.js?69dc70d6fe2ca9a837cf"></script></body>
+<script type="text/javascript" src="/static/js/manifest.e1cd96d399653e0cb183.js"></script><script type="text/javascript" src="/static/js/vendor.21901c8e20b7cffc1319.js"></script><script type="text/javascript" src="/static/js/start.312ed0f8927ecf9ae0df.js"></script></body>
 
 </html>
