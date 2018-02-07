@@ -27,7 +27,6 @@ const htmlWebpackPlugins = utils.getJspMapPath().map(function (mapEntry) {
   if (indexJsp) {
     conf.inject = 'body'
     conf.chunks = ['manifest', 'vendor', indexJsp.name]
-    conf.hash = true
   }
   return new HtmlWebpackPlugin(conf)
 })
