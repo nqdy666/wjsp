@@ -43,6 +43,7 @@
         <url-pattern>*.woff2</url-pattern>
         <url-pattern>*.ttf</url-pattern>
         <url-pattern>*.eot</url-pattern>
+        <url-pattern>*.map</url-pattern>
     </servlet-mapping>
 
     <!-- 不设置信息，交由springmvc的管理，文章http://blog.csdn.net/edward_qing_lee/article/details/43445471-->
