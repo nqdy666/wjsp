@@ -37,10 +37,10 @@ module.exports = {
     path: config.build.assetsRoot,
     filename: process.env.NODE_ENV === 'production'
       ? utils.assetsPath('js/[name].[chunkhash].js')
-      : utils.assetsPath('js/[name].[hash].js'),
+      : utils.assetsPath('js/[name].js?[hash]'),
     chunkFilename: process.env.NODE_ENV === 'production'
-      ? utils.assetsPath('js/[id].chunk.[chunkhash].js?')
-      : utils.assetsPath('js/[id].chunk.[hash].js?'),
+      ? utils.assetsPath('js/[id].chunk.[chunkhash].js')
+      : utils.assetsPath('js/[id].chunk.js?[hash]'),
     publicPath: process.env.NODE_ENV === 'production'
       ? config.build.assetsPublicPath
       : config.dev.assetsPublicPath,
