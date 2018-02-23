@@ -11,7 +11,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin')
 const pathResolve = utils.pathResolve
 const entries = {}
 jsJspMapData.forEach(item => {
-  entries[item.name] = [item.jsPath]
+  entries[item.name] = [pathResolve.src('polyfills/index.js'), item.jsPath]
 })
 
 const htmlWebpackPlugins = utils.getJspMapPath().map(function (mapEntry) {
