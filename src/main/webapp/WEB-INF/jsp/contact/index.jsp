@@ -33,6 +33,6 @@
 </div>
 <jsp:include page="../include/footer.jsp"></jsp:include>
 <jsp:include page="../include/common_script.jsp"></jsp:include>
-<script type="text/javascript" src="/static/js/manifest.e1cd96d399653e0cb183.js"></script><script type="text/javascript" src="/static/js/vendor.21901c8e20b7cffc1319.js"></script><script type="text/javascript" src="/static/js/contact.2a90203935f2dcb1af90.js"></script></body>
+<script type="text/javascript" src="/static/js/manifest.2280216d44c99eab2916.js"></script><script type="text/javascript" src="/static/js/vendor.21901c8e20b7cffc1319.js"></script><script type="text/javascript" src="/static/js/contact.ae1113387e1befd7ff8b.js"></script></body>
 
 </html>
