@@ -44,6 +44,6 @@
 <!--/滚屏-->
 <jsp:include page="../include/footer.jsp"></jsp:include>
 <jsp:include page="../include/common_script.jsp"></jsp:include>
-<script type="text/javascript" src="/static/js/manifest.2280216d44c99eab2916.js"></script><script type="text/javascript" src="/static/js/vendor.21901c8e20b7cffc1319.js"></script><script type="text/javascript" src="/static/js/index.f9d8e14098eb453538be.js"></script></body>
+<script type="text/javascript" src="/static/js/manifest.f93839dfcf180f0b2afc.js"></script><script type="text/javascript" src="/static/js/vendor.0adb37f44d19aeb70c20.js"></script><script type="text/javascript" src="/static/js/index.f9d8e14098eb453538be.js"></script></body>
 
 </html>
