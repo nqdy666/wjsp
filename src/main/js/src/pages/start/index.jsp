@@ -152,6 +152,7 @@
         <li>开发模式下，js引入的css是动态引入的，页面会出现闪变的效果。不用担心，在发布后的环境中是不会出现的。</li>
         <li>开发jsp页面的时候，热部署会有延时，具体参看<a href="#jsp-page">JSP页面</a>这一章节</li>
         <li>开发jsp文件务必在pages目录下开发，切勿在webapp目录下开发。否则在切换到pages目录下开发或者打包后或，webapp下的jsp的文件会被覆盖，导致修改的内容丢失。</li>
+        <li>随着js-jsp-map.js中配置的的入口文件增加，webpack-dev-server的热更新会很慢，建议根据当前开发需要先临时注释掉一些暂未使用的入口文件，保留1至3个即可，会大大提高热更新时间。</li>
       </ul>
     </div>
     <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 section" id="package">
