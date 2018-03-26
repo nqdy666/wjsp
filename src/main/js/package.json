@@ -10,6 +10,7 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "copy-webpack-plugin": "^4.5.1",
     "core-js": "^2.5.3",
     "nuo": "^1.0.0",
     "vue": "^2.5.2",
@@ -27,7 +28,6 @@
     "babel-preset-stage-2": "^6.22.0",
     "babel-register": "^6.22.0",
     "chalk": "^2.0.1",
-    "copy-webpack-plugin": "^4.0.1",
     "cross-env": "^5.0.0",
     "cross-spawn": "^5.0.1",
     "css-loader": "^0.28.0",
